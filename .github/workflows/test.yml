@@ -7,7 +7,7 @@ jobs:
     name: Add 3 and 7
     runs-on: actions_runner_dev
     steps:
-      – shell: bash
+      – name: bash
         run: |
           expr 3 + 7 > math-homework.txt
       – name: Upload math result for job 1
