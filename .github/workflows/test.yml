@@ -8,9 +8,9 @@ jobs:
     runs-on: actions_runner_dev
     steps:
       - name: suma
-      run: |
-          expr 3 + 7 > math-homework.txt
-  
-
+      run: expr 3 + 7 > math-homework.txt
+      
+      - name: Every time
+        run: echo "This step will always run"
 
  
