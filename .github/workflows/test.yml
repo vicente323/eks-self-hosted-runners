@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   job_1:
     name: Add 3 and 7
-    runs-on: actions_runner_dev
+    runs-on: self-hosted
     steps:
       - shell: bash
         run: |
@@ -17,8 +17,8 @@ jobs:
           name: homework
           path: math-homework.txt
   job_2:
-    name: Add 3 and 7
-    runs-on: actions_runner_dev
+    name: more calculations
+    runs-on: self-hosted
     steps:
       - shell: bash
         run: |
